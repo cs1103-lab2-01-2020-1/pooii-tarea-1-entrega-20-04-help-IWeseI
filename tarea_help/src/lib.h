@@ -6,6 +6,8 @@
 #define LIB_H
 
 #include <iostream>
+#include <vector>
+#include <cmath>
 using namespace std;
 
 #endif //LIB_H
