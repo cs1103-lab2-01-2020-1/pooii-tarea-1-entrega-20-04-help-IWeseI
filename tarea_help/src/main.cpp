@@ -35,6 +35,10 @@ int main() {
     b.pop();
     cout<<b.top()<<endl;
     cout<<"el stack b con tiene "<<b.size()<<" elementos";
+    
+    stack<string> c;
+    c = a;
+    cout<<c.top();
 
     return 0;
 }
