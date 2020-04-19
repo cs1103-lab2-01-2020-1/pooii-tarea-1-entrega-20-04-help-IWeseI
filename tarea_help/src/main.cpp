@@ -14,8 +14,26 @@ int main() {
     stringstack.push("utec");
     cout<<stringstack.top()<<endl;
     stringstack.pop();
+    
+    stack<string> a;
+    if (a.isEmpty()){
+        cout<<"a esta vacio";
+    } cout<<endl;
 
-    //agregar más ejemplos de todas las funciones de Stack
+    a.push("hola");
+    cout<<a.top()<<endl;
+    a.push("como");
+    cout<<a.top()<<endl;
+    a.push ("estas");
+    cout<<a.top()<<endl;
+
+    stack<float> b;
+    b.push(3.2);
+    b.push(2.2);
+    b.push(1.2);
+    b.pop();
+    cout<<b.top()<<endl;
+    cout<<"el stack b con tiene "<<b.size()<<" elementos";
 
     return 0;
 }
