@@ -7,21 +7,22 @@
 
 #include "../lib.h"
 
-template <typename T>
-class Stack {
-private:
-    vector<T> elements;
+using namespace std;
 
+template <typename  T> class stack{
+private:
+    vector<T> v;
 public:
-    //add copy constructor
-    //add assignment constructor
-    void push(T const& elem);
+    stack();
+    stack(const stack<T>& a);
+    void operator =( const stack<T>&a);
+    bool isEmpty();
+    int size();
+    void push(T a);
     void pop();
-    T const& top() const;
-    bool empty();
-    //overload == operator
-    void print_elements(ostream& os);
-    friend ostream& operator<<(ostream& os, Stack<T> const& s);
+    T const & top();
+    friend ostream& operator<<(ostream& os, stack<T> const& s);
+    bool operator ==(const stack<T>& a);
 
 };
 
