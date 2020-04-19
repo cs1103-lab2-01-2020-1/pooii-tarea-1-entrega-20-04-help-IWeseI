@@ -3,6 +3,7 @@
 //
 
 #include "lib.h"
+#include "template/stack.h"
 
 int main() {
 
